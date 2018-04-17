@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rule page</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+
+		
+
+
+		body {
+			   background-color: #00FF7F;
+			 }
+
+
+		.innerDiv{
+				width: 600px;
+				height: 400px;
+				border: 1px solid black;
+    			
+    			text-align: center;
+    			display: block;
+    			margin: auto;
+    			background-color: Turquoise ;
+				 }
+		@media only screen and (max-width:600px){
+			.innerDiv{
+				width:300px;
+				height:500px;
+				}
+		}
+
+		li{
+			margin: 25px 10px;
+		}
+
+		.button{
+			 background-color: #4CAF50; /* Green */
+    		 border: none;
+    		 color: white;
+    		 text-align: center;
+    		 text-decoration: none;
+    		 display: inline-block;
+    		 font-size: 16px;
+    		 transition-duration: 1s;
+    		 cursor: pointer;
+    		 margin-right: 10px;
+ 			}
+		.button:hover {
+			background-color: white;
+    		color: white;
+			}
+	</style>
+</head>
+<body>
+        <div class="innerDiv">
+		
+			
+			<p>
+			<h1>RULES OF THE GAME</h1>
+			<ul style="text-align:left">
+				<li>USE ARROW KEYS TO MOVE SNAKE "UP DOWN LEFT RIGHT"</li>
+				<li>EVERY OBSTACLE POSSESS NUMBER THAT DECREASE THE LENGHT OF SNAKE ACCORDING TO THAT NUMBER , IF SNAKE COLLIDES</li>
+				<li>IF LENGHT OF SNAKE BECOME EQUAL TO OR LESS THAN ZERO OR SNAKE TOUCH BOUNDRY OF FIELD THEN GAME WILL GET OVER</li>
+				<li> GAME COMPRISES OF 2 LEVELS: LEVEL 1 AND LEVEL 2</li>
+			</ul>
+			<button class="button"> <a href="play from here.html"><h3>GO BACK</h3></a></button>
+			
+			
+		</div>
+		
+		
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+
+  body {
+      background-image: url("snakebg2.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+  }
+
+  button {
+      background-color: green;
+      color: white;
+      height: 30px;
+      font-size: 12pt;
+      float: left;
+      width: 90px;
+      margin: 10px 0 0 0;
+      }
+     
+  #score{
+    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+    display: inline-block;
+    
+  }
+  button:hover {
+      background-color: red;
+      }
+    #mycanvas{
+
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 600;
+    height: 450;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+  
+</style>
+    
+</head>
+<body>
+  
+    <canvas id='mycanvas' width='600' height='450'> </canvas>
+    <button id='btn'>START</button>
+    <script src="jslevel2.js"></script>
+    <script src="javascript2.js"></script>
+    <div id="score">
+      Score: <h2 id= "scoreDisplay">
+  </h2>
+
+    </div>
+  
+
+<script>
+  var mycanvas = document.getElementById('mycanvas');
+  var ctx = mycanvas.getContext('2d');
+  var snakeSize = 10; 
+  var w = 600;
+  var h = 450;
+  var score = 0;
+  var snake;
+  var food;
+  var sound;
+</script>
+</body>
+</html>
